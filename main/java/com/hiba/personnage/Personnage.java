@@ -6,8 +6,13 @@ public class Personnage {
         return orientation;
     }
     public Orientation tourner(int fois) {
-        return Orientation.EST;
+        Orientation[] orientations = Orientation.values();
+        int indexInitial = orientation.ordinal();
+        int nouvelIndex = (indexInitial + fois) % orientations.length;
+        orientation = orientations[nouvelIndex];
+        return orientation;
     }
+
 
 }
 
