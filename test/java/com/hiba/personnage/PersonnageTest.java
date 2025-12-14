@@ -26,6 +26,13 @@ void orientation_initiale_est_nord() {
         Orientation result = p.tourner(0);
         assertEquals(Orientation.NORD, result);
     }
+    @Test
+    void tourner_quatre_fois_revient_a_nord() {
+        Personnage p = new Personnage();
+        Orientation result = p.tourner(4);
+        assertEquals(Orientation.NORD, result);
+    }
+
 
 
 
