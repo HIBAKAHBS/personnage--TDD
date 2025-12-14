@@ -20,6 +20,12 @@ void orientation_initiale_est_nord() {
         Orientation result = p.tourner(2);
         assertEquals(Orientation.SUD, result);
     }
+    @Test
+    void tourner_zero_fois_ne_change_pas_orientation() {
+        Personnage p = new Personnage();
+        Orientation result = p.tourner(0);
+        assertEquals(Orientation.NORD, result);
+    }
 
 
 
