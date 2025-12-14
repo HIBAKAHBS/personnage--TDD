@@ -1,4 +1,4 @@
-package com.hiba;
+package FizzBuzz.com.hiba;
 
 public class FizzBuzz {
 }
